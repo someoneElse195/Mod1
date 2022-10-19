@@ -1,0 +1,10 @@
+{
+    "parent": "block/cube_bottom_top",
+    "render_type": "minecraft:translucent",
+    "textures": {
+        "top": "mod1:block/jelly_block_top",
+        "side": "mod1:block/jelly_block_side",
+        "bottom": "mod1:block/jelly_block_bottom"
+    }
+    
+}
