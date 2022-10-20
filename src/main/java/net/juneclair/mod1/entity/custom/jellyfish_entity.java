@@ -47,7 +47,7 @@ public class jellyfish_entity extends Animal implements FlyingAnimal {
 
     @Override
     public boolean isFlying() {
-        return false;
+        return true;
     }
 
     @Override

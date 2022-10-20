@@ -31,15 +31,15 @@ public class JellyfishModel extends EntityModel<jellyfish_entity> {
 		PartDefinition body = parts.addOrReplaceChild("body", CubeListBuilder.create(), PartPose.offset(0.0F, 24.0F, -11.0F));
 		PartDefinition legs = body.addOrReplaceChild("legs", CubeListBuilder.create(), PartPose.offset(0.0F, 0.0F, 0.0F));
 		PartDefinition frontleft = legs.addOrReplaceChild("frontleft", CubeListBuilder.create(), PartPose.offset(-2.0969F, -10.5991F, 10.4726F));
-		frontleft.addOrReplaceChild("cube_r1", CubeListBuilder.create().texOffs(0, 0).addBox(-2.673F, -0.8769F, -2.5271F, 1.0F, 4.0F, 1.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.0F, 0.0F, 0.0F, -3.1249F, 0.0F, -2.7486F));
+		frontleft.addOrReplaceChild("cube_r1", CubeListBuilder.create().texOffs(0, 0).addBox(-2.6056F, -1.0395F, -2.5244F, 1.0F, 4.0F, 1.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(1.9997F, -0.1761F, 0.9365F, 1.5875F, -1.1778F, -1.5708F));
 		PartDefinition backleft = legs.addOrReplaceChild("backleft", CubeListBuilder.create(), PartPose.offset(-2.0969F, -10.5991F, 10.4726F));
-		backleft.addOrReplaceChild("cube_r2", CubeListBuilder.create().texOffs(0, 0).addBox(0.327F, 0.1231F, -2.5271F, 1.0F, 4.0F, 1.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.0F, 0.0F, 0.0F, -3.1249F, 0.0F, -2.7486F));
+		backleft.addOrReplaceChild("cube_r2", CubeListBuilder.create().texOffs(0, 0).addBox(0.3944F, -0.0395F, -2.5244F, 1.0F, 4.0F, 1.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(1.9997F, -0.1761F, 0.9365F, 1.5875F, -1.1778F, -1.5708F));
 		PartDefinition backright = legs.addOrReplaceChild("backright", CubeListBuilder.create(), PartPose.offset(-2.0969F, -10.5991F, 10.4726F));
-		backright.addOrReplaceChild("cube_r3", CubeListBuilder.create().texOffs(1, 0).addBox(0.327F, 0.1231F, 1.4729F, 1.0F, 4.0F, 1.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.0F, 0.0F, 0.0F, -3.1249F, 0.0F, -2.7486F));
+		backright.addOrReplaceChild("cube_r3", CubeListBuilder.create().texOffs(1, 0).addBox(0.3944F, -0.0395F, 1.4756F, 1.0F, 4.0F, 1.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(1.9997F, -0.1761F, 0.9365F, 1.5875F, -1.1778F, -1.5708F));
 		PartDefinition frontright = legs.addOrReplaceChild("frontright", CubeListBuilder.create(), PartPose.offset(-2.0969F, -10.5991F, 10.4726F));
-		frontright.addOrReplaceChild("cube_r4", CubeListBuilder.create().texOffs(0, 0).mirror().addBox(-2.673F, -0.8769F, 1.4729F, 1.0F, 4.0F, 1.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offsetAndRotation(0.0F, 0.0F, 0.0F, -3.1249F, 0.0F, -2.7486F));
+		frontright.addOrReplaceChild("cube_r4", CubeListBuilder.create().texOffs(0, 0).mirror().addBox(-2.6056F, -1.0395F, 1.4756F, 1.0F, 4.0F, 1.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offsetAndRotation(1.9997F, -0.1761F, 0.9365F, 1.5875F, -1.1778F, -1.5708F));
 		PartDefinition head = body.addOrReplaceChild("head", CubeListBuilder.create(), PartPose.offset(0.0F, 0.0F, 0.0F));
-		head.addOrReplaceChild("cube_r5", CubeListBuilder.create().texOffs(4, 2).addBox(-2.9425F, -4.4009F, -2.5274F, 5.0F, 5.0F, 5.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(-2.0969F, -10.5991F, 10.4726F, -3.1416F, 0.0F, 3.1416F));
+		head.addOrReplaceChild("cube_r5", CubeListBuilder.create().texOffs(4, 2).addBox(-2.8791F, -4.2248F, -2.5277F, 5.0F, 5.0F, 5.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(-0.0971F, -10.7752F, 11.4091F, 0.0F, -1.5708F, 0.0F));
 		return LayerDefinition.create(mesh, 24, 12);
 	}
 
