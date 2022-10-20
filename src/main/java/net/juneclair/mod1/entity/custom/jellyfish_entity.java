@@ -4,8 +4,12 @@ import java.util.EnumSet;
 
 import javax.annotation.Nullable;
 
+import net.juneclair.mod1.Item.ModItems;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.sounds.SoundEvents;
+import net.minecraft.world.InteractionHand;
+import net.minecraft.world.InteractionResult;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.entity.AgeableMob;
 import net.minecraft.world.entity.EntityType;
@@ -27,6 +31,9 @@ import net.minecraft.world.entity.ai.util.HoverRandomPos;
 import net.minecraft.world.entity.animal.Animal;
 import net.minecraft.world.entity.animal.FlyingAnimal;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.ItemUtils;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.pathfinder.BlockPathTypes;
 import net.minecraft.world.phys.Vec3;
@@ -74,8 +81,20 @@ public class jellyfish_entity extends Animal implements FlyingAnimal {
         flyingpathnavigation.setCanFloat(false);
         flyingpathnavigation.setCanPassDoors(true);
         return flyingpathnavigation;
-     }
+    }
 
+
+    /*public InteractionResult mobInteract(Player p_28298_, InteractionHand p_28299_) {
+        ItemStack itemstack = p_28298_.getItemInHand(p_28299_);
+        if (itemstack.is(Items.GLASS_BOTTLE) && !this.isBaby()) {
+           p_28298_.playSound(SoundEvents.COW_MILK, 1.0F, 1.0F);
+           ItemStack itemstack1 = ItemUtils.createFilledResult(itemstack, p_28298_, ModItems.JELLYFISH_JELLY());
+           p_28298_.setItemInHand(p_28299_, itemstack1);
+           return InteractionResult.sidedSuccess(this.level.isClientSide);
+        } else {
+           return super.mobInteract(p_28298_, p_28299_);
+        }
+     }*/
 
 
     @Override
