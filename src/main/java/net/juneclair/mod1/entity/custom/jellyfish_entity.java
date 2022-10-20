@@ -34,15 +34,15 @@ public class jellyfish_entity extends Animal implements FlyingAnimal {
             .add(Attributes.MOVEMENT_SPEED, 0.4f).build();
     }
     
-    /*@Override
+    @Override
     public void registerGoals() {
         this.goalSelector.addGoal(0, new FloatGoal(this));
-        this.goalSelector.addGoal(1, new PanicGoal(null, lerpX));
+        this.goalSelector.addGoal(1, new PanicGoal(this, 1.5D));
         this.goalSelector.addGoal(2, new WaterAvoidingRandomFlyingGoal(this, 1.0D));
         this.goalSelector.addGoal(3, new LookAtPlayerGoal(this, Player.class, 6.0F));
         this.goalSelector.addGoal(4, new RandomLookAroundGoal(this));
     } 
-    */
+
 
 
     @Override
