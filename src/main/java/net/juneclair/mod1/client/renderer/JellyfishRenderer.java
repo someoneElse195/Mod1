@@ -14,7 +14,7 @@ public class JellyfishRenderer extends MobRenderer<jellyfish_entity, JellyfishMo
     private static final ResourceLocation TEXTURE = new ResourceLocation(Mod1.MOD_ID, "textures/entity/jellyfish_texture.png");
 
     public JellyfishRenderer(EntityRendererProvider.Context ctx) {
-        super(ctx, new JellyfishModel(ctx.bakeLayer(JellyfishModel.LAYER_LOCATION)), 0.5F);
+        super(ctx, new JellyfishModel(ctx.bakeLayer(JellyfishModel.LAYER_LOCATION)), 0.8F);
     }
 
 
