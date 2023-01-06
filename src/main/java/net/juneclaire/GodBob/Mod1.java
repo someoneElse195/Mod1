@@ -1,11 +1,11 @@
-package net.juneclair.mod1;
+package net.juneclaire.GodBob;
 
 
-import net.juneclair.mod1.Item.ModItems;
-import net.juneclair.mod1.block.ModBlocks;
-import net.juneclair.mod1.client.models.JellyfishModel;
-import net.juneclair.mod1.client.renderer.JellyfishRenderer;
-import net.juneclair.mod1.entity.ModEntityTypes;
+import net.juneclaire.GodBob.Item.ModItems;
+import net.juneclaire.GodBob.block.ModBlocks;
+import net.juneclaire.GodBob.client.models.JellyfishModel;
+import net.juneclaire.GodBob.client.renderer.JellyfishRenderer;
+import net.juneclaire.GodBob.entity.ModEntityTypes;
 import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraftforge.client.event.EntityRenderersEvent;
 import net.minecraftforge.common.MinecraftForge;

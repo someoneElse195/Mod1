@@ -1,11 +1,11 @@
-package net.juneclair.mod1.block;
+package net.juneclaire.GodBob.block;
 
 
 import java.util.function.Supplier;
 
-import net.juneclair.mod1.Mod1;
-import net.juneclair.mod1.Item.ModCreativeModeTab;
-import net.juneclair.mod1.Item.ModItems;
+import net.juneclaire.GodBob.Mod1;
+import net.juneclaire.GodBob.Item.ModCreativeModeTab;
+import net.juneclaire.GodBob.Item.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;

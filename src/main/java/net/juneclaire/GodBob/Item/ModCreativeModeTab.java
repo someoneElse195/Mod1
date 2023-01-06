@@ -1,4 +1,4 @@
-package net.juneclair.mod1.Item;
+package net.juneclaire.GodBob.Item;
 
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;

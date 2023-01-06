@@ -1,10 +1,10 @@
-package net.juneclair.mod1.client.models;
+package net.juneclaire.GodBob.client.models;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
 
-import net.juneclair.mod1.Mod1;
-import net.juneclair.mod1.entity.custom.jellyfish_entity;
+import net.juneclaire.GodBob.Mod1;
+import net.juneclaire.GodBob.entity.custom.jellyfish_entity;
 import net.minecraft.client.model.EntityModel;
 import net.minecraft.client.model.geom.ModelLayerLocation;
 import net.minecraft.client.model.geom.ModelPart;

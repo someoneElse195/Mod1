@@ -1,7 +1,7 @@
-package net.juneclair.mod1.entity;
+package net.juneclaire.GodBob.entity;
 
-import net.juneclair.mod1.Mod1;
-import net.juneclair.mod1.entity.custom.jellyfish_entity;
+import net.juneclaire.GodBob.Mod1;
+import net.juneclaire.GodBob.entity.custom.jellyfish_entity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.MobCategory;
 import net.minecraftforge.eventbus.api.IEventBus;

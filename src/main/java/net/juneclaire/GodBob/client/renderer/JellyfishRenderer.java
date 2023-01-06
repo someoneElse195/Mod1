@@ -1,8 +1,8 @@
-package net.juneclair.mod1.client.renderer;
+package net.juneclaire.GodBob.client.renderer;
 
-import net.juneclair.mod1.Mod1;
-import net.juneclair.mod1.client.models.JellyfishModel;
-import net.juneclair.mod1.entity.custom.jellyfish_entity;
+import net.juneclaire.GodBob.Mod1;
+import net.juneclaire.GodBob.client.models.JellyfishModel;
+import net.juneclaire.GodBob.entity.custom.jellyfish_entity;
 import net.minecraft.client.renderer.entity.EntityRendererProvider;
 import net.minecraft.client.renderer.entity.MobRenderer;
 import net.minecraft.resources.ResourceLocation;

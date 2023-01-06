@@ -1,10 +1,10 @@
-package net.juneclair.mod1.entity.custom;
+package net.juneclaire.GodBob.entity.custom;
 
 import java.util.EnumSet;
 
 import javax.annotation.Nullable;
 
-import net.juneclair.mod1.Item.ModItems;
+import net.juneclaire.GodBob.Item.ModItems;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvents;
@@ -83,18 +83,17 @@ public class jellyfish_entity extends Animal implements FlyingAnimal {
         return flyingpathnavigation;
     }
 
-
-    /*public InteractionResult mobInteract(Player p_28298_, InteractionHand p_28299_) {
+    public InteractionResult mobInteract(Player p_28298_, InteractionHand p_28299_) {
         ItemStack itemstack = p_28298_.getItemInHand(p_28299_);
         if (itemstack.is(Items.GLASS_BOTTLE) && !this.isBaby()) {
            p_28298_.playSound(SoundEvents.COW_MILK, 1.0F, 1.0F);
-           ItemStack itemstack1 = ItemUtils.createFilledResult(itemstack, p_28298_, ModItems.JELLYFISH_JELLY());
+           ItemStack itemstack1 = ItemUtils.createFilledResult(itemstack, p_28298_, ModItems.JELLYFISH_JELLY.get().getDefaultInstance());
            p_28298_.setItemInHand(p_28299_, itemstack1);
            return InteractionResult.sidedSuccess(this.level.isClientSide);
         } else {
            return super.mobInteract(p_28298_, p_28299_);
         }
-     }*/
+    }
 
 
     @Override
@@ -117,7 +116,6 @@ public class jellyfish_entity extends Animal implements FlyingAnimal {
     }
 
     class JellyfishWanderGoal extends Goal {
-        private static final int WANDER_THRESHOLD = 22;
   
         JellyfishWanderGoal() {
            this.setFlags(EnumSet.of(Goal.Flag.MOVE));
@@ -142,7 +140,6 @@ public class jellyfish_entity extends Animal implements FlyingAnimal {
         private Vec3 findPos() {
            Vec3 vec3;
             vec3 = jellyfish_entity.this.getViewVector(0.0F);  
-            int i = 8;
             Vec3 vec32 = HoverRandomPos.getPos(jellyfish_entity.this, 8, 7, vec3.x, vec3.z, ((float)Math.PI / 2F), 3, 1);
             return vec32 != null ? vec32 : AirAndWaterRandomPos.getPos(jellyfish_entity.this, 8, 4, -2, vec3.x, vec3.z, (double)((float)Math.PI / 2F));
         }
